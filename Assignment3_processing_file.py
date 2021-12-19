@@ -11,18 +11,37 @@ try:
 except:
     print('File does not exist')
     quit()
+
+# for lx in fhand
 inp = fhand.read() # read file
 for line in inp: # 不能放fname
     line = line.rstrip()
 
 # variables.upper() =! strings.capitalize()
-print(inp.upper())# 不能放fname
+print(inp.upper())# withiut indent, 不能放fname/line
+
+# Prof's answer
+
+fname = input('Enter a file name:')
+try:
+    fhand = open(fname) #access to file
+
+except:
+    print('File does not exist')
+    quit()
+
+for lx in fhand:
+    ly=lx.rstrip()
+    print(ly.upper())
 
 
+# Another example
+fh = open('words.txt')
+# print(fh) #>>> only show objects
 
-
-
-
+if lx in fh:
+    ly = lx.rstrip() # eliminate n/
+    print(ly.upper()) # print lines / content
 
 
 #>>>> my failed answer1 >> only print the last line in cap
@@ -52,4 +71,36 @@ inp = fhand.read() # read file
 for line in inp: # 不能放fname
     line = line.rstrip()
 
-print(inp.upper())# 不能放fname
+print(inp.upper())# 不能放fname / fhand
+
+
+# my faiiled answer 3
+fname = input('Enter a file name:')
+try:
+    fhand = open(fname)
+
+except:
+    print('File does not exist')
+    quit()
+
+for line in fhand:
+    line = line.rstrip()
+
+print(line.upper())
+## >>> output: AND MIND-NUMBING
+
+# failed answer 4
+fname = input('Enter a file name:')
+try:
+    fhand = open(fname)
+
+except:
+    print('File does not exist')
+    quit()
+
+for line in fhand:
+    line = line.rstrip()
+
+print(fhand.upper())
+#>> traceback on line 103   print(fhand.upper())
+##  AttributeError: '_io.TextIOWrapper' object has no attribute 'upper'
