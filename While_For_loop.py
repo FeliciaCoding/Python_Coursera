@@ -3,7 +3,9 @@ i = 1
 while i < 6:
   print(i)
   i += 1
-# How many time it runs the loop?
+
+# for loop: definite loop
+# How many time it runs the loop? >>
 tot = 0
 for i in [5, 4, 3, 2, 1] :
     tot = tot + 1
@@ -49,6 +51,22 @@ while True:
 print('ALL DONE')
 print(tot, num, tot/num)
 
+# repeatedly prompts a user for integer numbers until the user enters 'done'.
+# 'done' is entered, print out the largest and smallest of the numbers
+# put out an appropriate message and ignore the number when users type an appropriate message.
+
+sval = input('Enter a numer:')
+if sval == 'done'
+    break
+try:
+    fval = float('sval')
+except:
+    print('Invalid input')
+
+While
+
+print('Maximum is', max)
+print('Minimum is', min)
 
 ## my coding
 #n = input('Enter a number / done')
