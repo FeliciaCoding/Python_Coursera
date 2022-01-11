@@ -20,6 +20,7 @@ fhand = open('file.text')
 for line in fhand:
     line = lint.rstip()
     if not startswith('From: '):
+    # if not 'xxx' in line
         continue # skip lines
     print(line)
 
