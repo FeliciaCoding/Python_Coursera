@@ -14,3 +14,5 @@ for line in hand: # read thru file
     numlist.append(num)
 
 print('Maximum:', max(numlist))
+
+#>> Maximum: 0.9907
