@@ -8,9 +8,8 @@
 #Average spam confidence: 0.7507185185185187
 
 # promp for file name : mbox-short.txt
-# fname= input('Enter a file name:')
 # open file and access to read
-fm = input('Enter a file name')
+fm = input('Enter a file name:')
 fh = open(fm)
 
 #fh = open('mbox-short.txt')
@@ -43,37 +42,3 @@ for line in fh:
 
 avg = tot / count
 print('Average spam confidence:', avg)
-
-
-        ##########
-    #start = line.find(':')
-    #end = line.find(' ',start)
-    #value = line[start+2:end]
-    #print(value)
-
-
-
-
-    #???????????? find lines
-    ##atpos = line.find('X-DSPAM-Confidence:')
-    ##sppos = line.find(' ',atpos)
-    # slice
-    ##value = line[atpos+1 : sppos]
-    ##print(value)
-
-
-    # EXTRACT NUMBERS
-
-
-
-
-
-
-    # turn string into numbers
-    ###num = float(value)
-    ###count = count+1
-    # value = float(line[mark+1:])
-    ###tot = tot + num
-
-###avg = tot / count
-###print('Average spam confidence:', avg)
