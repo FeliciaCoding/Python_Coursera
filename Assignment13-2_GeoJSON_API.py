@@ -1,4 +1,11 @@
 # Week 6 : Using the GeoJSON API
+# Calling a JSON API
+#write a Python program somewhat similar to http://www.pythonlearn.com/code/geojson.py.
+#Prompt for a location, contact a web service and retrieve JSON for the web service and parse that data,
+#Retrieve the first place_id from the JSON. A place ID is a textual identifier that uniquely identifies a place
+#as within Google Maps.
+
+
 
 import urllib.request, urllib.parse, urllib.error
 import json
